@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <style>
+        body{
+            background-image: url("background.jpg");
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+        nav a.active {
+        text-decoration: underline;
+        text-underline-offset: 15px;
+        color: blue;
+        opacity: 1;
+        }
+        .topbar{
+            margin-left: 10px;
+            background-color: whitesmoke;
+            padding: 5px;
+        }
+        .items{
+            justify-content: center;
+            display: flex;
+            font-size: 20px;
+            list-style: none;
+            gap: 25px;
+            font-size: 25px;
+        }
+        nav a{
+            color: black;
+            text-decoration: none;
+            opacity: 0.8;
+            text-underline-offset: 5px;
+        }
+        nav a:hover{
+            opacity: 1;
+            text-underline-offset: 15px;
+            text-decoration: blue underline;
+            color: blue;
+            transition: 0.3s;
+        }
+        .image{
+            width: 300px;
+            padding-right: 50px;
+            padding-top: 50px;
+        }
+        .container1{
+            display: flex;
+            justify-content: space-evenly;
+            width: 1000px;
+            border: 1px solid black;
+            margin-top: 100px;
+            margin-left: 130px;
+            border-radius: 20px;
+            background-color: #f2f3f7;
+        }
+        .box1{
+            margin-top: 4px;
+            margin-right: -150px;
+        }
+        .box2{
+            width: 200px;
+        }
+        .text1{
+            padding-top: 150px;
+            font-size: 25px;
+            white-space: nowrap;
+            margin-left: -20px;
+        }
+        .text2{
+            margin-left: -20px;
+            white-space: nowrap;
+            font-size: 25px;
+        }
+        span{
+            color: blue;
+        }
+        .footer{
+            margin-top: 300px;
+            background-color: #252525;
+            color: white;
+            height: 150px;
+            text-align: center;
+        }
+        .text3{
+            font-size: 20px;
+        }
+        .text4{
+            font-size: 20px;
+        }
+        .text5{
+            margin-top: 1px;
+            font-size: 15px;
+            padding-top: 10px;
+        }
+        .footspan{
+            opacity: 0.8;
+            color: white;
+        }
+        .footspan2{
+            color: whitesmoke;
+        }
+        .container2{
+            margin-top: 10px;
+            border-top: 1px solid whitesmoke;
+            display: flex;
+            justify-content: space-between;
+            height: 10px;
+        }
+        .text6{
+            padding-left: 10px;
+            margin-top: 10px;
+        }
+        .text7{
+            padding-right: 10px;
+            margin-top: 10px;
+        }
+        @media screen and(max-width:768px){
+            .container1 {
+                flex-direction: column;
+                align-items: center;
+                width: 90%;
+                margin: 50px auto;
+                padding: 20px;
+            }
+
+            .box1 {
+                margin: 0;
+                padding-top: 20px;
+            }
+
+            .box2 {
+                width: 100%;
+                text-align: center;
+                margin-bottom: 20px;
+            }
+
+            .text1, .text2 {
+                margin: 0;
+                padding: 5px;
+                font-size: 18px;
+                white-space: normal;
+            }
+
+            .image {
+                width: 200px;
+                padding: 10px 0;
+            }
+
+            .items {
+                flex-direction: column;
+                align-items: center;
+                gap: 10px;
+                font-size: 20px;
+            }
+
+            .container2 {
+                flex-direction: column;
+                align-items: center;
+                height: auto;
+                gap: 8px;
+                padding-top: 10px;
+            }
+
+            .text6, .text5, .text7 {
+                padding: 0;
+                margin: 5px 0;
+                font-size: 14px;
+            }
+
+            .footer {
+                height: auto;
+                padding-bottom: 20px;
+            }
+
+            .text3, .text4 {
+                font-size: 16px;
+            }
+        }
+    </style>
+    <nav class="topbar">
+        <ul class="items">
+            <li><a href="portfolio.html">About me</a></li>
+            <li><a href="portfolio(2).html">Project</a></li>
+            <li><a href="portfolio(3).html">Contact me</a></li>
+        </ul>
+    </nav>
+    <div class="container1">
+        <div class="box2">
+            <p class="text1"><span>Email:</span> abcd@gmail.com</p>
+            <p class="text2"><span>Phone:</span> +91 7826391027</p>
+        </div>
+        <div class="box1">
+            <img src="facepic2.png">
+        </div>
+    </div>
+    <div class="footer">
+        <p class="text3">Personal Portfolio</p>
+        <p class="text4">Enthusiast web designer</p>
+        <a href="" target="_blank"><i class="fa-brands fa-instagram fa-lg" style="color: #ce1254;"></i></a>
+        &nbsp<a href="" target="_blank"><i class="fa-brands fa-linkedin fa-lg" style="color: #0887e7;"></i></a>
+        <div class="container2">
+            <div><p class="text6">abcd@gmail.com</p></div>
+            <div><p class="text5"><span class="footspan">&copy; 2025 </span>all rights reserved </p></div>
+            <div><p class="text7">+91 7826391027</p></div>
+        </div>
+    </div>
+    <script>
+    const currentURL = window.location.href;
+    document.querySelectorAll("nav a").forEach(link => {
+    if (link.href === currentURL) {
+    link.classList.add("active");
+        }
+    });
+    </script>
+</body>
+</html>
